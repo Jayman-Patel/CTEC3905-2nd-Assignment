@@ -7,27 +7,50 @@
 html {
 	margin: 0;
 	padding: 0;
+	height: 100%;
 	/*Sets browser margins to 0 for more control*/	
 }
 body {
-	background: #999;
+	height: 100%;
 	font-family: arial, sans-serif;
 	margin: 0;
 }
 
-.topnav> * {
+header {
+	height: 100%;
+	background-image: url(images/fullscreen=background.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;	
+	
+}
+
+.sidenav> * {
     background-color: #4CAF50; /* Green */
-    border-color: #FFFFFF;
-    color: white;
+	border: 
+    border-color: #8d5b04;
     padding: 10px;
     text-align: center;
     text-decoration: none;
     font-size: 15px;
-    margin: 5px;
+	border-top: 1px solid #000000;    /* in place of the word "black", you can use #000000 or rgb(0,0,0) */
+    border-bottom: 1px solid #000000;
     cursor: pointer;
 }
 
-.topnav {
+h1 {
+	text-align: center;
+	font-family: Cinzel Decorative;
+	text-shadow: 2px 2px;
+}
+
+.seasontimeline {
+	text-align: center;
+	font-family: Cinzel Decorative;
+	font-size: 30px;
+}
+
+.sidenav {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -35,27 +58,25 @@ body {
 	height: 50px;
 }
 
-}
-
-h1 {
-	text-align: center;
-	display: inline;
-	background-color: #666;
-	color: white;
-	margin: 0;
-	padding: 10px 12px 8px 12px;
-	
-}
 
 dt {
   margin-top: 0.5em;
   font-weight: bold;
 }
+
 footer {
   text-align: center;
   padding: 0.5em 1em 0.75em;
 }
+
 footer p {
   padding: 0;
   margin: 0;
 }
+
+#
+
+@media (min-width: 400px) {}
+@media (min-width: 600px) {}
+@media (min-width: 600px) {}
+
