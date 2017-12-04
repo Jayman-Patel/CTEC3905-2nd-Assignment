@@ -5,44 +5,43 @@
 
 
 html {
+	/*Sets browser margins to 0 for more control*/
 	margin: 0;
 	padding: 0;
-	height: 100%;
-	/*Sets browser margins to 0 for more control*/	
+
 }
-body {
-	height: 100%;
+
+/*Structure - All css which describes where the content is positioned on the page*/
+ 
+ body {
 	font-family: arial, sans-serif;
 	margin: 0;
 }
 
-header {
-	height: 100%;
-	background-image: url(images/fullscreen=background.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;	
-	
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }
 
-.sidenav> * {
-    background-color: #4CAF50; /* Green */
-	border: 
-    border-color: #8d5b04;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 15px;
-	border-top: 1px solid #000000;    /* in place of the word "black", you can use #000000 or rgb(0,0,0) */
-    border-bottom: 1px solid #000000;
-    cursor: pointer;
-}
 
 h1 {
 	text-align: center;
 	font-family: Cinzel Decorative;
 	text-shadow: 2px 2px;
 }
+.sidenav {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+}
+
+/*Skin - css which describes what the element looks like*/
+
 
 .seasontimeline {
 	text-align: center;
@@ -51,17 +50,11 @@ h1 {
 }
 
 .sidenav {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	align-items: flex-start;
-	height: 50px;
-}
+   padding: 5px;
+   border: 1px solid #8888bb;
+   background: #ccccff;
+   margin-right: 80%
 
-
-dt {
-  margin-top: 0.5em;
-  font-weight: bold;
 }
 
 footer {
@@ -74,7 +67,26 @@ footer p {
   margin: 0;
 }
 
-#
+/*Content - css which describes the content of elements*/
+
+.sidenav ul {
+  background: #ddd;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidenav a {
+  color: #333;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem;
+}
+
+.sidenav a:hover {
+  background: #d4d4d4;
+}
 
 @media (min-width: 400px) {}
 @media (min-width: 600px) {}
