@@ -27,6 +27,14 @@ html {
   z-index: -1;
 }
 
+header {
+	flex: 1;
+	background: tomato;
+}	
+
+article { 
+
+}
 
 h1 {
 	text-align: center;
