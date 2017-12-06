@@ -8,7 +8,12 @@ html {
 	/*Sets browser margins to 0 for more control*/
 	margin: 0;
 	padding: 0;
+	height: 100%;
+	box-sizing: border-box
+}
 
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 /*Structure - All css which describes where the content is positioned on the page*/
@@ -16,6 +21,10 @@ html {
  body {
 	font-family: arial, sans-serif;
 	margin: 0;
+	min-height: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	text-align: center;
 }
 
 #bg {
@@ -32,8 +41,9 @@ header {
 	background: tomato;
 }	
 
-article { 
-
+article {
+    flex: 4;
+    background: deepskyblue;
 }
 
 h1 {
